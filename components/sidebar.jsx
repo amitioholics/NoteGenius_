@@ -7,7 +7,6 @@ import { toast } from "sonner";
 export default function Sidebar({ activeTab, setActiveTab, onNewNote, onUpload }) {
     const navItems = [
         { id: "dashboard", label: "Dashboard", icon: LayoutDashboard },
-        { id: "editor", label: "AI Lab", icon: Brain },
         { id: "notes", label: "My Notes", icon: BookOpen },
         { id: "mathlab", label: "Math Practice", icon: Calculator },
     ];

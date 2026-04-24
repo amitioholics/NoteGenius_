@@ -129,7 +129,6 @@ export default function Home() {
               <div className="grid grid-cols-1 gap-3">
                 {[
                 { id: "dashboard", label: "Dashboard", icon: LayoutDashboard, desc: "Overview & Analytics" },
-                { id: "editor", label: "AI Lab", icon: Brain, desc: "Neural Note Processing" },
                 { id: "notes", label: "Library", icon: BookOpen, desc: "Cognitive Knowledge Base" },
                 { id: "mathlab", label: "Math Practice", icon: Calculator, desc: "AI Problem Generator" },
             ].map((item) => (<button key={item.id} onClick={() => {
