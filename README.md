@@ -18,6 +18,12 @@ Contact: **amitsinghrajput263@gmail.com**
 - MCQ Quiz Generator  
   Turn notes into multiple-choice questions with scoring and explanations.
 
+- Math Practice Lab  
+  Upload math problems (PDF/Images) or type them out to automatically extract questions and generate high-quality practice variations with step-by-step AI solutions.
+
+- Document Extraction  
+  Seamlessly upload and extract text from PDF, DOCX, and PPTX files to instantly create study notes.
+
 - Offline Resilience  
   Graceful local fallbacks when AI API is unavailable or rate-limited.
 
@@ -28,11 +34,11 @@ Contact: **amitsinghrajput263@gmail.com**
 
 ## 🧠 Tech Stack
 
-- Framework: Next.js 15 (App Router), React, TypeScript  
+- Framework: Next.js 15 (App Router), React, JavaScript  
 - Styling: Tailwind CSS, shadcn/ui  
 - AI: Vercel AI SDK with OpenAI models (with local fallbacks)  
 - Data: Lightweight JSON (demo) via Next.js Route Handlers  
-- Tooling: Vercel (deploy), ESLint/TS
+- Tooling: Vercel (deploy), ESLint
 
 ---
 
@@ -73,7 +79,9 @@ Visit http://localhost:3000
    - Summary: Generate a detailed summary  
    - Keywords: Extract and copy key concepts  
    - Quiz: Generate MCQs, select answers, and view score  
-4) Add tags for better organization
+   - Math Lab: Upload math problems or type them to generate AI variations and practice.
+4) Use "Upload Document" to extract text directly from PDF, DOCX, or PPTX files.
+5) Add tags for better organization
 
 Notes are stored in a local JSON file (demo) and managed via API endpoints.
 
@@ -81,10 +89,10 @@ Notes are stored in a local JSON file (demo) and managed via API endpoints.
 
 ## 📦 Project Structure (key files)
 
-- `app/page.tsx` — main UI, tabs, and interactions  
-- `lib/ai-helpers.ts` — AI integration + local fallback algorithms  
-- `app/api/notes/route.ts` — JSON-based CRUD for demo storage  
-- `components/*` — Note editor, list, dialogs, keyword cards, etc.  
+- `app/page.jsx` — main UI, tabs, and interactions  
+- `lib/ai-helpers.js` — AI integration + local fallback algorithms  
+- `app/api/notes/route.js` — JSON-based CRUD for demo storage  
+- `components/*` — Note editor, list, dialogs, keyword cards, math lab, etc.  
 - `app/globals.css` — theme tokens, animations, micro-interactions
 
 ---
